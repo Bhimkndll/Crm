@@ -38,6 +38,8 @@ Route::get('/tabs', [App\Http\Controllers\AdminController::class, 'tabs'])->name
 
 /*users */
 Route::get('/users/show', [AdminController::class, 'users'])->name('users.show');
+Route::get('/users/show/id', [AdminController::class, 'users_id'])->name('users.show.id
+');
 
 Route::get('/users/edit/{id}', [AdminController::class, 'user_edit'])->name('user.edit');
 Route::get('/users/delete/{id}', [AdminController::class, 'user_delete'])->name('user.delete');
